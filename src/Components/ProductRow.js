@@ -15,7 +15,7 @@ class ProductRow extends React.Component {
 		// console.log("Render:" + product.guid); // Fires when a single product price is changed
 
 		return (
-			<tr>
+			<tr key={product.guid}>
 				<td>{name}</td>
 				<td><input value={product.price} onChange={this.onChangePrice} /></td>
 			</tr>

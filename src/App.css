@@ -26,3 +26,6 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+tr {animation:fadein 1s;}
+@keyframes fadein {from {opacity:0;} to {opacity:1;}}
