@@ -1,5 +1,4 @@
 import React from "react";
-import ProductCategoryRow from "./ProductCategoryRow.js";
 import ProductRow from "./ProductRow.js";
 
 class ProductTable extends React.Component {
@@ -10,7 +9,6 @@ class ProductTable extends React.Component {
 	render() {
 		const rows = [];
 		let lastCategory = null;
-	  
 		for(var guid in this.props.products){
 			let product = this.props.products[guid];
 			rows.push(
@@ -20,15 +18,6 @@ class ProductTable extends React.Component {
 				  onChangePrice={this.props.onChangePrice} />
 			 );
 		}
-	  /*this.props.products.forEach((product) => {
-		 rows.push(
-			<ProductRow
-			  product={product}
-			  key={product.guid}
-			  onChangePrice={this.props.onChangePrice} />
-		 );
-		 //lastCategory = product.category;
-	  });*/
  
 	  return (
 		 <table>

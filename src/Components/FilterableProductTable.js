@@ -4,7 +4,6 @@ import ProductTable from "./ProductTable.js";
 
 class FilterableProductTable extends React.Component {
 	render() {
-		//console.log("RENDER: FilterableProductTable with " + JSON.stringify(this.props.products));
 		return (
 			<div>
 				<SearchBar />
